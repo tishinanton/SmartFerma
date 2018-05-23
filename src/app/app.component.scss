@@ -1,0 +1,29 @@
+@import 'theme';
+
+:host {
+    display: flex;
+    align-items: stretch;
+    flex: 1 0 auto;
+}
+
+nav {
+    width: 70px;
+    background: #333;
+}
+
+mat-toolbar {
+    @include mat-elevation(1);
+    flex: none;
+}
+
+.site-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+
+    .content {
+        padding: 20px;
+        flex: auto;
+        overflow: auto;
+    }
+}
