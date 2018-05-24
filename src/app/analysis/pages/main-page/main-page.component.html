@@ -1,16 +1,44 @@
+<!-- <div class="div"></div> -->
 <div class="row">
-    <div class="col-xs-6">
-        <mat-card>
-            <mat-card-content>
-                <app-chart></app-chart>
-            </mat-card-content>
-        </mat-card>
+    <div class="col-xs-12 col-md-9 col-lg-10">
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <app-chart-wrapper [options]="doughnutOptions" [datasets]="doughnutDatasets" [labels]="doughnutLabels" chartTitle="План - факт финансовых средств"
+                    type="doughnut"></app-chart-wrapper>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <app-chart-wrapper [options]="options" [datasets]="datasets" [labels]="labels" chartTitle="Расходы" type="bar"></app-chart-wrapper>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <app-chart-wrapper [options]="radarOptions" [datasets]="radarDatasets" [labels]="radarLabels" chartTitle="Октагон расходов"
+                    type="radar"></app-chart-wrapper>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <app-chart-wrapper (chartGenerated)="chartGenerated($event)" [options]="lineOptions" [datasets]="lineDatasets" [labels]="lineLabels"
+                    chartTitle="График изменения расходов" type="line"></app-chart-wrapper>
+            </div>
+        </div>
     </div>
-    <div class="col-xs-6">
-        <mat-card>
-            <mat-card-content>
-                <app-chart></app-chart>
-            </mat-card-content>
-        </mat-card>
+    <div class="col-xs-12 col-md-3 col-lg-2">
+        <div class="row">
+            <div class="col-xs-6 col-md-12">
+                <app-changes-card></app-changes-card>
+            </div>
+            <div class="col-xs-6 col-md-12">
+                <app-changes-card></app-changes-card>
+            </div>
+            <div class="col-xs-6 col-md-12">
+                <app-changes-card></app-changes-card>
+            </div>
+            <div class="col-xs-6 col-md-12">
+                <app-changes-card></app-changes-card>
+            </div>
+            <div class="col-xs-6 col-md-12">
+                <app-changes-card></app-changes-card>
+            </div>
+            <div class="col-xs-6 col-md-12">
+                <app-changes-card></app-changes-card>
+            </div>
+        </div>
     </div>
 </div>

@@ -1,0 +1,42 @@
+:host {
+    display: block;
+    margin-bottom: 15px;
+}
+
+mat-card-header {
+    display: flex;
+    align-items: flex-start;
+
+    mat-card-title {
+        color: #43425D;
+        font-size: 14px;
+    }
+
+    mat-icon {
+        margin-left: auto;
+    }
+}
+
+mat-card-content {
+    position: relative;
+}
+
+.change {
+    font-size: 12px;
+    color: #FF4141;
+}
+
+.chart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    display: flex;
+    align-items: flex-end;
+
+    .bar {
+        width: 7px;
+        margin: 1px;
+        background: linear-gradient(#5EE2A0, rgba(#5EE2A0, 0.5));
+    }
+}

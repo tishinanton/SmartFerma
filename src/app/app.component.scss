@@ -1,4 +1,4 @@
-@import 'theme';
+@import "theme";
 
 :host {
     display: flex;
@@ -9,10 +9,12 @@
 nav {
     width: 70px;
     background: #333;
+    flex: none;
 }
 
 mat-toolbar {
     @include mat-elevation(1);
+
     flex: none;
 }
 
@@ -20,6 +22,7 @@ mat-toolbar {
     display: flex;
     flex-direction: column;
     flex: auto;
+    max-width: calc(100vw - 90px);
 
     .content {
         padding: 20px;

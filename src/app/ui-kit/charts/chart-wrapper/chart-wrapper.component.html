@@ -1,0 +1,13 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>{{ chartTitle }}</mat-card-title>
+        <mat-form-field>
+            <mat-select [(ngModel)]="filter">
+                <mat-option [value]="2018">2018</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </mat-card-header>
+    <mat-card-content>
+        <app-chart (chartGenerated)="chartGenerated.emit($event)" [options]="options" [datasets]="datasets" [labels]="labels" [type]="type"></app-chart>
+    </mat-card-content>
+</mat-card>

@@ -1,0 +1,27 @@
+:host {
+    display: block;
+    margin-bottom: 15px;
+}
+
+mat-card-header {
+    display: flex;
+    align-items: center;
+    flex: auto;
+
+    ::ng-deep .mat-card-header-text {
+        flex: auto;
+    }
+}
+
+mat-form-field {
+    width: 80px;
+}
+
+.mat-card-title {
+    font-size: 18px;
+    flex: auto;
+}
+
+// mat-card-content {
+//     min-height: 300px;
+// }
