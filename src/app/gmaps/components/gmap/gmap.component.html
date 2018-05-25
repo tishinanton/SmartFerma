@@ -1,1 +1,17 @@
 <div class="map" #map></div>
+
+<button mat-fab (click)="openLayers()">
+    <mat-icon>layers</mat-icon>
+</button>
+
+<ng-template #layersTemplate>
+
+    <mat-selection-list (selectionChange)="toggleLayer($event.option.value)">
+        <h3 matSubheader>Тип карты</h3>
+        <mat-list-item *ngFor="let type of mapIds">
+            <mat-radio-button (change)="mapTypeSelected(type)" [checked]="type.mapId == mapId">{{type.title}}</mat-radio-button>
+        </mat-list-item>
+        <h3 matSubheader>Слои</h3>
+        <mat-list-option [selected]="layer.visible" [value]="layer" [checkboxPosition]="'left'" *ngFor="let layer of layers">{{ layer.title }}</mat-list-option>
+    </mat-selection-list>
+</ng-template>

@@ -4,9 +4,13 @@ import { ModuleWithProviders } from '@angular/compiler/src/core';
 import { GOOGLE_MAPS_API_KEY } from './gmaps.tokens';
 import { GmapsService } from './gmaps.service';
 import { GmapComponent } from './components/gmap/gmap.component';
+import { UiKitModule } from '../ui-kit/ui-kit.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
     imports: [
+        UiKitModule,
+        FormsModule,
         CommonModule
     ],
     declarations: [GmapComponent],
@@ -30,6 +34,7 @@ export class GmapsModule {
 @NgModule({
     imports: [
         CommonModule,
+
         GmapsModule
     ],
     exports: [

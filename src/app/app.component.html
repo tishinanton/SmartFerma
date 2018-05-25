@@ -1,9 +1,35 @@
-<nav></nav>
+<nav>
+    <div class="logo">
+        <img src="/assets/Group 1022.svg" alt="">
+    </div>
+    <div class="navigation">
+        <img routerLink="/analysis" src="/assets/benefits-presentation.svg" alt="">
+        <img routerLink="/analysis/map" src="/assets/map-with-placeholder.svg" alt="">
+        <!-- <img src="/assets/grass.svg" alt="">
+        <img src="/assets/note-black-paper-with-text-lines.svg" alt="">
+        <img src="/assets/leaf.svg" alt="">
+        <img src="/assets/Group 1017.svg" alt="">
+        <img src="/assets/stock.svg" alt="">
+        <img src="/assets/Group 1016.svg" alt=""> -->
+    </div>
+</nav>
 <div class="site-wrapper">
     <mat-toolbar color="primary">
         <mat-toolbar-row>
-            <a routerLink="/analysis">Аналитика</a>
-            <a routerLink="/analysis/map">Карта</a>
+            <!-- <a routerLink="/analysis">Аналитика</a>
+            <a routerLink="/analysis/map">Карта</a> -->
+            <div class="icons">
+                <mat-icon>info</mat-icon>
+                <mat-icon>email</mat-icon>
+                <mat-icon>settings</mat-icon>
+            </div>
+            <div class="user">
+                <div class="name">Бериков Серик</div>
+                <div class="avatar">
+                    <img src="/assets/user.jpg" alt="">
+                </div>
+            </div>
+
         </mat-toolbar-row>
     </mat-toolbar>
     <div class="content">

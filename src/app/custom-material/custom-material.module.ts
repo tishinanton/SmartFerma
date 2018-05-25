@@ -5,13 +5,23 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule, MatInput } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatButtonModule } from '@angular/material/button';
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatListModule } from '@angular/material/list';
 
 export const MATERIAL_MODULES = [
     MatToolbarModule,
     MatCardModule,
     MatInputModule,
     MatSelectModule,
-    MatIconModule
+    MatIconModule,
+    MatCheckboxModule,
+    MatButtonModule,
+    MatBottomSheetModule,
+    MatRadioModule,
+    MatListModule
 ];
 
 @NgModule({
