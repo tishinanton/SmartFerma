@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MapComponent } from './map/map.component';
 import { ChartComponent } from './charts/chart/chart.component';
 import { CustomMaterialModule } from '../custom-material/custom-material.module';
 import { ChartWrapperComponent } from './charts/chart-wrapper/chart-wrapper.component';
@@ -14,7 +13,7 @@ import { ChangesCardComponent } from './changes-card/changes-card.component';
         ReactiveFormsModule,
         CustomMaterialModule
     ],
-    declarations: [MapComponent, ChartComponent, ChartWrapperComponent, ChangesCardComponent],
-    exports: [MapComponent, ChartComponent, CustomMaterialModule, ChartWrapperComponent, ChangesCardComponent]
+    declarations: [ChartComponent, ChartWrapperComponent, ChangesCardComponent],
+    exports: [ChartComponent, CustomMaterialModule, ChartWrapperComponent, ChangesCardComponent]
 })
 export class UiKitModule { }

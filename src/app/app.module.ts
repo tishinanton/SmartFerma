@@ -7,6 +7,7 @@ import { CustomMaterialModule } from './custom-material/custom-material.module';
 import { UiKitModule } from './ui-kit/ui-kit.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { GmapsModule } from './gmaps/gmaps.module';
 
 @NgModule({
     declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
         BrowserAnimationsModule,
         BrowserModule,
         AppRoutingModule,
-        UiKitModule
+        UiKitModule,
+        GmapsModule.forRoot('AIzaSyDqwzzgcukRVCNNc4Zf7XeLXcbplh7qjts')
     ],
     providers: [],
     bootstrap: [AppComponent]
