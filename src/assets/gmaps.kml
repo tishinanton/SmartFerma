@@ -18,7 +18,7 @@
     </Style>
     <Style id="poly-FFFFFF-2000-128-nodesc-highlight">
       <LineStyle>
-        <color>ffffffff</color>
+        <color>#FFDA6D</color>
         <width>3</width>
       </LineStyle>
       <PolyStyle>
@@ -27,7 +27,7 @@
         <outline>1</outline>
       </PolyStyle>
       <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
+        <text><![CDATA[<h3>$[name]</h3><button mat-raised-button>asdasd</button>]]></text>
       </BalloonStyle>
     </Style>
     <StyleMap id="poly-FFFFFF-2000-128-nodesc">
