@@ -1,15 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import { Input } from '@angular/core';
 
 @Component({
-  selector: 'app-changes-card',
-  templateUrl: './changes-card.component.html',
-  styleUrls: ['./changes-card.component.scss']
+    selector: 'app-changes-card',
+    templateUrl: './changes-card.component.html',
+    styleUrls: ['./changes-card.component.scss']
 })
 export class ChangesCardComponent implements OnInit {
 
-  constructor() { }
+    @Input() cardTitle = '';
+    @Input() value = '';
+    @Input() change = '';
+    @Input() top = false;
+    @Input() bottom = false;
 
-  ngOnInit() {
-  }
+    constructor() { }
+
+    ngOnInit() {
+    }
 
 }

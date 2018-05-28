@@ -24,6 +24,13 @@ mat-card-content {
 .change {
     font-size: 12px;
     color: #FF4141;
+    display: flex;
+    align-items: center;
+    mat-icon {
+        font-size: 17px;
+        width: auto;
+        height: auto;
+    }
 }
 
 .chart {
@@ -40,3 +47,29 @@ mat-card-content {
         background: linear-gradient(#5EE2A0, rgba(#5EE2A0, 0.5));
     }
 }
+
+:host-context(.green) {
+    .change {
+        color: #3CC480;
+    }
+}
+
+:host-context(.purple-bars) {
+    .bar {
+        background: linear-gradient(#984A59, rgba(#984A59, 0.35));
+    }
+}
+
+:host-context(.light-green-bars) {
+    .bar {
+        background: linear-gradient(#A6FBA0, rgba(#A6FBA0, 0.42));
+    }
+}
+
+:host-context(.blue-bars) {
+    .bar {
+        background: linear-gradient(#003BFC, rgba(#003BFC, 0.36));
+    }
+}
+
+// #A6FBA0

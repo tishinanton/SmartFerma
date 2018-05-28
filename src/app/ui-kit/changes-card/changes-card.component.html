@@ -1,11 +1,15 @@
 <mat-card>
     <mat-card-header>
-        <mat-card-title>Семена</mat-card-title>
+        <mat-card-title>{{ cardTitle }}</mat-card-title>
         <mat-icon>more_vert</mat-icon>
     </mat-card-header>
     <mat-card-content>
-        <div class="value">10</div>
-        <div class="change">13.2%</div>
+        <div class="value">{{ value }}</div>
+        <div class="change">
+            <mat-icon *ngIf="top">arrow_downward</mat-icon>
+            <mat-icon *ngIf="bottom">arrow_upward</mat-icon>
+            {{ change }}%
+        </div>
         <div class="chart">
             <div class="bar" style="height: 50%;"></div>
             <div class="bar" style="height: 85%;"></div>
