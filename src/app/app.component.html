@@ -1,6 +1,6 @@
-<nav>
+<nav *ngIf="store.toolbarsVisibility | async">
     <div class="logo">
-        <img src="/assets/Group 1022.svg" alt="">
+        <img routerLink="/" src="/assets/Group 1022.svg" alt="">
     </div>
     <div class="navigation">
         <img routerLink="/analysis" src="/assets/benefits-presentation.svg" alt="">
@@ -14,7 +14,7 @@
     </div>
 </nav>
 <div class="site-wrapper">
-    <mat-toolbar color="primary">
+    <mat-toolbar color="primary" *ngIf="store.toolbarsVisibility | async">
         <mat-toolbar-row>
             <!-- <a routerLink="/analysis">Аналитика</a>
             <a routerLink="/analysis/map">Карта</a> -->

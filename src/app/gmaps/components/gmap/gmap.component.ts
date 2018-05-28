@@ -61,7 +61,8 @@ export class GmapComponent implements OnInit {
             mapTypeControl: false
         });
         const layer = new google.maps.KmlLayer({
-            url: 'https://raw.githubusercontent.com/tishinanton/SmartFerma/master/src/assets/gmaps.kml',
+            url: 'http://93.190.51.3/gmaps.kml?cache=' + new Date().getTime(),
+            // 'https://raw.githubusercontent.com/tishinanton/SmartFerma/master/src/assets/gmaps.kml',
             map: map
         });
         this.map = map;

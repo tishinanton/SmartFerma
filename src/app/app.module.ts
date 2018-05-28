@@ -8,10 +8,12 @@ import { UiKitModule } from './ui-kit/ui-kit.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { GmapsModule } from './gmaps/gmaps.module';
+import { StoreService } from './services/store.service';
+import { StaticModule } from './static/static.module';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
     ],
     imports: [
         HttpClientModule,
@@ -19,9 +21,10 @@ import { GmapsModule } from './gmaps/gmaps.module';
         BrowserModule,
         AppRoutingModule,
         UiKitModule,
+        StaticModule,
         GmapsModule.forRoot('AIzaSyDqwzzgcukRVCNNc4Zf7XeLXcbplh7qjts')
     ],
-    providers: [],
+    providers: [StoreService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

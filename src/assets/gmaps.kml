@@ -4,16 +4,25 @@
     <name>Agropark Kaskylen Fields</name>
     <Style id="poly-FFFFFF-2000-128-nodesc-normal">
       <LineStyle>
-        <color>ffffffff</color>
+        <color>ff4caf50</color>
         <width>2</width>
       </LineStyle>
       <PolyStyle>
-        <color>80ffffff</color>
+        <color>804caf50</color>
         <fill>1</fill>
         <outline>1</outline>
       </PolyStyle>
       <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
+        <text><![CDATA[
+            <h2 class="test">Акатай</h2>
+            <h3>Озимая пшеница</h3>
+            <h4><span>Культура</span>: <span>Соя</span></h4>
+            <h4><span>Сорт</span>: <span>Атлантик</span></h4>
+            <h4><span>Урожайность, ц/га</span>: <span>42</span></h4>
+            <h4><span>Обработка почвы</span>: <span>-</span></h4>
+            <h4><span>Площадь обрабатываемая, га</span>: <span>28,0</span></h4>
+            <h4><span>Площадь расчетная, га</span>: <span>28.1</span></h4>
+        ]]></text>
       </BalloonStyle>
     </Style>
     <Style id="poly-FFFFFF-2000-128-nodesc-highlight">
